@@ -3,7 +3,7 @@ const connectDb = require('./db/index')
 const { app } = require('./app')
 const config = require('./config/config')
 
-const port = config.PORT || 3232
+const port = config.config.PORT || 3232
 
 connectDb()
     .then(() => {
